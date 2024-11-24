@@ -1,0 +1,42 @@
+/* Responsive Grid Styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px solid #000;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+.cell.taken {
+    pointer-events: none;
+    background-color: #ddd;
+}
+
+.menu {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.status, .new-game {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
